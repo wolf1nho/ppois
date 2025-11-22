@@ -7,10 +7,10 @@ cd build
 cmake ..
 make -j$(nproc)
 
-TEST_BINARY="./VectorTests"
+TEST_BINARY="./MatrixTests"
 
 if [ ! -f "$TEST_BINARY" ]; then
-    TEST_BINARY=$(find . -type f -executable -name "VectorTests" | head -n 1)
+    TEST_BINARY=$(find . -type f -executable -name "MatrixTests" | head -n 1)
 fi
 if [ -z "$TEST_BINARY" ]; then
     echo "Не найден исполняемый файл тестов!"

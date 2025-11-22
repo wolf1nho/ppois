@@ -13,27 +13,27 @@ if(ENABLE_COVERAGE)
     add_link_options(--coverage)
 endif()
 
-add_library(Vector STATIC
-    Vector.cpp
+add_library(Matrix STATIC
+    Matrix.cpp
 )
 
-target_include_directories(Vector PUBLIC
+target_include_directories(Matrix PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 find_package(Threads REQUIRED)
 find_package(GTest REQUIRED)
 
-add_executable(MenuTest tests/MenuVector.cpp)
-target_link_libraries(MenuTest Vector)
-add_executable(VectorTests tests/VectorTest.cpp)
-target_link_libraries(VectorTests Vector gtest gtest_main Threads::Threads)
+add_executable(MenuTest tests/MatrixMenu.cpp)
+target_link_libraries(MenuTest Matrix)
+add_executable(MatrixTests tests/MatrixTests.cpp)
+target_link_libraries(MatrixTests Matrix gtest gtest_main Threads::Threads)
 
-add_test(NAME VectorTests COMMAND VectorTests)
+add_test(NAME MatrixTests COMMAND MatrixTests)
 
 add_custom_target(run_tests
     COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure
-    DEPENDS VectorTests
+    DEPENDS MatrixTests
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
     COMMENT "Running tests with CTest"
 )
