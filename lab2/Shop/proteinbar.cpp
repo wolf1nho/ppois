@@ -8,9 +8,6 @@ ProteinBar::ProteinBar(double price, const std::string &brand, const std::string
       protein_grams(protein_grams), carbs_grams(carbs_grams), sugar_grams(sugar_grams), fat_grams(fat_grams), fiber_grams(fiber_grams),
       is_vegan(is_vegan), is_gluten_free(is_gluten_free), is_low_sugar(is_low_sugar) {}
 
-#include "proteinbar.h"
-
-// ---- Геттеры ----
 std::string ProteinBar::get_brand() const { return brand; }
 std::string ProteinBar::get_product_name() const { return product_name; }
 std::string ProteinBar::get_flavor() const { return flavor; }

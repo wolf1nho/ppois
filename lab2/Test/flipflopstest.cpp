@@ -1,35 +1,40 @@
 #include <gtest/gtest.h>
-#include "../Shop/flipflops.h"
+#include "Shop/flipflops.h"
 
-// 🔹 Тест базовой инициализации и геттеров
-TEST(FlipFlopsTest, InitializationAndGetters)
-{
-    FlipFlops ff(15.99, "41", "Black", "rubber");
+TEST(FlipFlopsTest, Initialization) {
+    FlipFlops flipflops(550.0, Size::EU40, Color::Black, Material::Rubber, "Arena");
 
-    EXPECT_DOUBLE_EQ(ff.get_price(), 15.99);
-    EXPECT_EQ(ff.get_size(), "41");
-    EXPECT_EQ(ff.get_color(), "Black");
-    EXPECT_EQ(ff.get_material(), "rubber");
+    EXPECT_DOUBLE_EQ(flipflops.get_price(), 550.0);
+    EXPECT_EQ(flipflops.get_size(), Size::EU40);
+    EXPECT_EQ(flipflops.get_color(), Color::Black);
+    EXPECT_EQ(flipflops.get_material(), Material::Rubber);
+    EXPECT_EQ(flipflops.get_brand(), "Arena");
 }
 
-// 🔹 Тест на другой цвет и материал
-TEST(FlipFlopsTest, DifferentMaterial)
-{
-    FlipFlops ff(9.5, "39", "Blue", "eva");
-
-    EXPECT_DOUBLE_EQ(ff.get_price(), 9.5);
-    EXPECT_EQ(ff.get_size(), "39");
-    EXPECT_EQ(ff.get_color(), "Blue");
-    EXPECT_EQ(ff.get_material(), "eva");
+TEST(FlipFlopsTest, DefaultBrandIsEmpty) {
+    FlipFlops generic(400.0, Size::EU39, Color::Blue, Material::EVA, "");
+    EXPECT_EQ(generic.get_brand(), "");
 }
 
-// 🔹 Тест на пластиковые шлёпанцы другого размера
-TEST(FlipFlopsTest, PlasticType)
-{
-    FlipFlops ff(7.99, "42", "Red", "plastic");
+TEST(FlipFlopsTest, ToStringConversions) {
+    FlipFlops summerFlipFlops(480.0, Size::EU39, Color::NeonGreen, Material::EVA, "Nike");
+    FlipFlops classicFlipFlops(600.0, Size::EU42, Color::White, Material::Rubber, "Adidas");
 
-    EXPECT_DOUBLE_EQ(ff.get_price(), 7.99);
-    EXPECT_EQ(ff.get_size(), "42");
-    EXPECT_EQ(ff.get_color(), "Red");
-    EXPECT_EQ(ff.get_material(), "plastic");
+    EXPECT_EQ(summerFlipFlops.get_size_str(), "39");
+    EXPECT_EQ(summerFlipFlops.get_color_str(), "neon green");
+    EXPECT_EQ(summerFlipFlops.get_material_str(), "eva");
+    EXPECT_EQ(summerFlipFlops.get_brand(), "Nike");
+
+    EXPECT_EQ(classicFlipFlops.get_size_str(), "42");
+    EXPECT_EQ(classicFlipFlops.get_color_str(), "white");
+    EXPECT_EQ(classicFlipFlops.get_material_str(), "rubber");
+    EXPECT_EQ(classicFlipFlops.get_brand(), "Adidas");
+}
+
+TEST(FlipFlopsTest, BrandCanBeCustom) {
+    FlipFlops branded(700.0, Size::EU41, Color::Red, Material::Plastic, "Nike");
+    EXPECT_EQ(branded.get_brand(), "Nike");
+
+    FlipFlops noBrand(300.0, Size::EU38, Color::Gray, Material::EVA, "");
+    EXPECT_EQ(noBrand.get_brand(), "");
 }

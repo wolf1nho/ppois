@@ -1,20 +1,29 @@
 #ifndef WORKOUTGLOVES_H
 #define WORKOUTGLOVES_H
+
 #include <string>
 #include "good.h"
+#include "Enums/enums.h"
 
 class WorkoutGloves : public Good
 {
-    std::string size;     // "S", "M", "L", "XL"
-    std::string material; // "leather", "synthetic", "mesh"
+    Size size;
+    Material material;
     bool wrist_support;
 
 public:
-    WorkoutGloves(double price, const std::string &size, const std::string &material, bool wrist_support);
+    WorkoutGloves(
+        double price,
+        Size size,
+        Material material,
+        bool wrist_support);
 
-    std::string get_size() const;
-    std::string get_material() const;
-    bool has_wrist_support() const;
+    Size get_size() const { return size; }
+    Material get_material() const { return material; }
+    bool has_wrist_support() const { return wrist_support; }
+
+    std::string get_size_str() const { return EnumToStr::to_string(size); }
+    std::string get_material_str() const { return EnumToStr::to_string(material); }
 };
 
-#endif
+#endif 

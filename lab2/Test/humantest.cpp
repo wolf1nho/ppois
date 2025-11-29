@@ -117,10 +117,3 @@ TEST(HumanSubscriptionTest, GetSubscriptionValues_NoSubscription_Throws)
     EXPECT_THROW(h.get_validality_period(), ExceptionSubscriptionError);
     EXPECT_THROW(h.get_initial_num_of_sessions(), ExceptionSubscriptionError);
 }
-
-int main(int argc, char **argv)
-{
-    ::testing::InitGoogleTest(&argc, argv);
-
-    return RUN_ALL_TESTS();
-}

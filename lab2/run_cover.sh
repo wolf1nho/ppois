@@ -26,6 +26,7 @@ GCOVR_FILTERS=(
     "--filter=$SRC_ROOT/SM/.*"
     "--filter=$SRC_ROOT/Mirror/.*"
     "--filter=$SRC_ROOT/Exception/.*"
+    "--filter=$SRC_ROOT/Enums/.*"
 )
 
 GCOVR_EXCLUDES=(

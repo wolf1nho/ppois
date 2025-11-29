@@ -1,0 +1,1 @@
+/usr/bin/g++ -g --coverage CMakeFiles/SortMethodsTest.dir/main.cpp.o CMakeFiles/SortMethodsTest.dir/CombSortTest.cpp.o CMakeFiles/SortMethodsTest.dir/TournamentSortTest.cpp.o -o SortMethodsTest  libSortMethods.a -lgtest -lgtest_main 

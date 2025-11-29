@@ -10,6 +10,7 @@ if(ENABLE_COVERAGE)
 endif()
 
 file(GLOB_RECURSE SOURCES
+    "Enums/*.*"
     "Exception/*.*"
     "Human/*.*"
     "Mirror/*.*"
