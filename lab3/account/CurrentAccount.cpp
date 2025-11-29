@@ -1,5 +1,5 @@
 #include "CurrentAccount.h"
-#include "../exception/Exception.h"
+#include "exception/Exception.h"
 #include "Overdraft.h"
 
 CurrentAccount::CurrentAccount(double balance, Currency currency, const std::string &accountName, Customer *owner, DataManager *dataManager)

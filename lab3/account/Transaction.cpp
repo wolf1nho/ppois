@@ -1,7 +1,7 @@
 #include "Transaction.h"
-#include "../getter/TimeGetter.h"
-#include "../exception/Exception.h"
-#include "../datamanager/DataManager.h"
+#include "getter/TimeGetter.h"
+#include "exception/Exception.h"
+#include "datamanager/DataManager.h"
 
 Transaction::Transaction(BankAccount *from, double amount, Currency currency, TransactionType type, DataManager *dataManager)
     : from(from), amount(amount), type(type), dataManager(dataManager),

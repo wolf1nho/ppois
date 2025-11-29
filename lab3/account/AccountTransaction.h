@@ -2,10 +2,9 @@
 #define ACCOUNTTRANSACTION_H
 
 #include "Transaction.h"
-#include "../datamanager/DataManager.h"
+#include "datamanager/DataManager.h"
 
 class Receipt;
-// class Transaction;
 class CurrencyConverter;
 class BankAccount;
 

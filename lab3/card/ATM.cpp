@@ -135,6 +135,5 @@ std::vector<Money> ATM::withdraw(double amount, Currency currency)
         storage.bringMoney(sumToAdd);
         throw ExceptionATMError("Невозможно выдать данную сумму");
     }
-    // sum.insert(sum.end(), sumToAdd.begin(), sumToAdd.end());
     return sumToAdd;
 }

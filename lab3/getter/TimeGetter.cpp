@@ -1,5 +1,5 @@
 #include "TimeGetter.h"
-#include "../exception/Exception.h"
+#include "exception/Exception.h"
 
 time_t TimeGetter::getTime()
 {

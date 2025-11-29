@@ -1,7 +1,7 @@
 #include "BankSafeBox.h"
-#include "../exception/Exception.h"
-#include "../getter/TimeGetter.h"
-#include "../customer/Customer.h"
+#include "exception/Exception.h"
+#include "getter/TimeGetter.h"
+#include "customer/Customer.h"
 
 BankSafeBox::BankSafeBox(double price, DataManager *dataManager)
     : pricePerDay(price), status(BoxStatus::AVAILABLE), startRentTime(0), tenant(nullptr)
@@ -31,7 +31,6 @@ std::string BankSafeBox::getID() const
     return id;
 }
 
-// Аренда ячейки
 void BankSafeBox::rent(Customer &customer)
 {
     if (status != BoxStatus::AVAILABLE)
@@ -42,7 +41,6 @@ void BankSafeBox::rent(Customer &customer)
     startRentTime = TimeGetter::getTodayMidnight();
 }
 
-// Освобождение ячейки
 void BankSafeBox::free()
 {
     if (status != BoxStatus::RENTED)
@@ -53,13 +51,11 @@ void BankSafeBox::free()
     status = BoxStatus::AVAILABLE;
 }
 
-// Заблокировать ячейку
 void BankSafeBox::block()
 {
     status = BoxStatus::BLOCKED;
 }
 
-// Разблокировать
 void BankSafeBox::unblock()
 {
     if (status != BoxStatus::BLOCKED)
@@ -70,7 +66,6 @@ void BankSafeBox::unblock()
         status = BoxStatus::RENTED;
 }
 
-// Получить текущего арендатора
 std::string BankSafeBox::getRenterName() const
 {
     if (tenant)
@@ -79,7 +74,6 @@ std::string BankSafeBox::getRenterName() const
         throw ExceptionSafeBoxError("");
 }
 
-// Сколько стоит аренда
 double BankSafeBox::getPricePerDay() const
 {
     return pricePerDay;
@@ -90,7 +84,6 @@ double BankSafeBox::getPriceForRent()
     return pricePerDay * getRentDurationDays();
 }
 
-// Сколько времени арендуется (в днях)
 int BankSafeBox::getRentDurationDays() const
 {
     if (status != BoxStatus::RENTED)

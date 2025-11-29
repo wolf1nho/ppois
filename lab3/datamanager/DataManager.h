@@ -1,19 +1,18 @@
 #ifndef DATA_MANAGER_H
 #define DATA_MANAGER_H
 #include <vector>
-// #include <memory>
 #include <unordered_map>
 #include <stdexcept>
 
-#include "../generator/Generator.h"
-#include "../account/Transaction.h"
-#include "../account/Credit.h"
-#include "../customer/Customer.h"
-#include "../card/ATM.h"
-#include "../card/Card.h"
-#include "../account/BankAccount.h"
-#include "../card/Terminal.h"
-#include "../account/CurrencyConverter.h"
+#include "generator/GeneratorID.h"
+#include "account/Transaction.h"
+#include "account/Credit.h"
+#include "customer/Customer.h"
+#include "card/ATM.h"
+#include "card/Card.h"
+#include "account/BankAccount.h"
+#include "card/Terminal.h"
+#include "account/CurrencyConverter.h"
 
 class Credit;
 class Customer;

@@ -4,7 +4,7 @@
 #include <ctime>
 #include <string>
 
-#include "../getter/TimeGetter.h"
+#include "getter/TimeGetter.h"
 
 class ExpirationDate
 {

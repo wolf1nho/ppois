@@ -1,5 +1,5 @@
 #include "Wallet.h"
-#include "../exception/Exception.h"
+#include "exception/Exception.h"
 
 Wallet::Wallet()
 {

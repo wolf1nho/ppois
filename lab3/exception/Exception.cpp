@@ -38,10 +38,6 @@ ExceptionIncorrectCreditPaymentAmount::ExceptionIncorrectCreditPaymentAmount(con
 {
 }
 
-/* ExceptionIncorrectCurrency::ExceptionIncorrectCurrency(const char *msg) : Exception(msg)
-{
-} */
-
 ExceptionIncorrectDayCount::ExceptionIncorrectDayCount(const char *msg) : Exception(msg)
 {
 }

@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#include "../account/Currency.h"
+#include "account/Currency.h"
 
 enum class Nominal
 {

@@ -1,11 +1,11 @@
 #include "CurrencyConverter.h"
-#include "../exception/Exception.h"
-#include "../getter/Getter.h"
+#include "exception/Exception.h"
+#include "getter/Getter.h"
 
 CurrencyConverter::CurrencyConverter(Currency baseCur, Currency second, double secondPrice, Currency third, double thirdPrice)
     : baseCurrency(baseCur)
 {
-    if (secondPrice < 0 && thirdPrice < 1) // хотя бы одна валюта в конвертере равна 1
+    if (secondPrice < 0 && thirdPrice < 0)
         throw ExceptionIncorrectPrice("стоимость валюты меньше 0");
     converter[baseCur] = 1;
     converter[second] = secondPrice;

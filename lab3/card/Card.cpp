@@ -1,6 +1,6 @@
 #include "Card.h"
-#include "../account/Credit.h"
-#include "../exception/Exception.h"
+#include "account/Credit.h"
+#include "exception/Exception.h"
 #include "PinGen.h"
 #include "CardNumGen.h"
 

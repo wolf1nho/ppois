@@ -1,5 +1,5 @@
 #include "Cashback.h"
-#include "../getter/TimeGetter.h"
+#include "getter/TimeGetter.h"
 
 Cashback::Cashback(double rate, Card *card) : rate(rate), amount(0), card(card)
 {

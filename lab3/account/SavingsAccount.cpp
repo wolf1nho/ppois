@@ -1,6 +1,6 @@
 #include "SavingsAccount.h"
-#include "../exception/Exception.h"
-#include "../getter/TimeGetter.h"
+#include "exception/Exception.h"
+#include "getter/TimeGetter.h"
 #include "Currency.h"
 
 SavingsAccount::SavingsAccount(double balance, Currency currency, const std::string &accountName, double rate, double minimalBalance, Customer *owner, DataManager *dataManager)

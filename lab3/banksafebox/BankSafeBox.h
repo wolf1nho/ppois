@@ -4,7 +4,7 @@
 #include <ctime>
 #include <string>
 
-#include "../datamanager/DataManager.h"
+#include "datamanager/DataManager.h"
 
 class Customer;
 

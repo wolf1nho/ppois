@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
-#include "../datamanager/DataManager.h"
-#include "../banksafebox/BankSafeBox.h"
-#include "../account/Currency.h"
-#include "../exception/Exception.h"
+#include "datamanager/DataManager.h"
+#include "banksafebox/BankSafeBox.h"
+#include "account/Currency.h"
+#include "exception/Exception.h"
 
 TEST(BankSafeBoxTest, Exceptions)
 {

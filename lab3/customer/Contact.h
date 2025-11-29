@@ -6,11 +6,9 @@
 #include "Customer.h"
 #include "account/BankAccount.h"
 
-// class Customer;
-
 class Contact
 {
-    std::string nickname; // "Мама"
+    std::string nickname; // имя контакта("Мама")
     Customer *customer;
     BankAccount *account;
 

@@ -2,6 +2,7 @@
 #define PASSWORDVALIDATOR_H
 
 #include <string>
+
 class PasswordValidator
 {
     static bool validatePassword(std::string &password)

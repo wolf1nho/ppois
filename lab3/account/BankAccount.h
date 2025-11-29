@@ -39,7 +39,8 @@ protected:
     DataManager *dataManager;
 
 public:
-    BankAccount(AccountType type, double initialBalance, Currency currency, const std::string &accountName, Customer *owner, DataManager *dataManager);
+    BankAccount(AccountType type, double initialBalance, Currency currency,
+                const std::string &accountName, Customer *owner, DataManager *dataManager);
     virtual ~BankAccount() = default;
 
     std ::string getID() const;

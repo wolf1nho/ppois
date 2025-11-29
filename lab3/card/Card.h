@@ -3,11 +3,10 @@
 
 #include <string>
 
-#include "../account/BankAccount.h"
-
+#include "account/BankAccount.h"
 #include "ExpirationDate.h"
 #include "PaymentSystem.h"
-#include "../datamanager/DataManager.h"
+#include "datamanager/DataManager.h"
 #include "Cashback.h"
 
 enum class CardType

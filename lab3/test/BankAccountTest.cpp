@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
 
-#include "../account/BankAccount.h"
-#include "../account/CurrencyConverter.h"
-#include "../datamanager/DataManager.h"
-#include "../customer/Customer.h"
-#include "../exception/Exception.h"
+#include "account/BankAccount.h"
+#include "account/CurrencyConverter.h"
+#include "datamanager/DataManager.h"
+#include "customer/Customer.h"
+#include "exception/Exception.h"
 
 TEST(BankAccountTest, ConstructorAndFunctions)
 {

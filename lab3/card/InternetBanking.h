@@ -4,8 +4,8 @@
 #include <vector>
 #include <string>
 
-#include "../card/Card.h"
-#include "../datamanager/DataManager.h"
+#include "card/Card.h"
+#include "datamanager/DataManager.h"
 
 class Credit;
 class BankAccount;

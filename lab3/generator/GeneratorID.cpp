@@ -1,8 +1,8 @@
-#include "Generator.h"
+#include "GeneratorID.h"
 #include <random>
 #include <string>
 
-#include "../exception/Exception.h"
+#include "exception/Exception.h"
 
 bool GeneratorID::checkIDExistance(const std::string &id) const
 {
@@ -28,7 +28,7 @@ void GeneratorID::generateID(std::string &id)
     }
     if (count_of_attempts >= maxAttemptsCount)
     {
-        throw Exception("Runtime error");
+        throw Exception("");
     }
     listOfID.emplace(id);
 }

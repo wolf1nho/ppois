@@ -3,8 +3,8 @@
 
 #include <map>
 
-#include "../money/Money.h"
-#include "../account/Currency.h"
+#include "money/Money.h"
+#include "account/Currency.h"
 
 class ATMStorage
 {

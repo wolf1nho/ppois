@@ -5,13 +5,12 @@
 
 #include "Credit.h"
 #include "CreditAccount.h"
-#include "../customer/Customer.h"
+#include "customer/Customer.h"
 #include "Transaction.h"
 
 class Credit;
 class CreditAccount;
 class Receipt;
-// class Transaction;
 
 class CreditPayment : public Transaction
 {

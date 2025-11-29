@@ -4,8 +4,6 @@
 #include <ctime>
 #include <string>
 
-// #include "BankAccount.h"
-// #include "CurrencyConverter.h"
 #include "Currency.h"
 
 enum class TransactionType

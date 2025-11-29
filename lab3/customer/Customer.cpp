@@ -1,9 +1,9 @@
 #include "Customer.h"
 #include <regex>
 #include "VerificationService.h"
-#include "../exception/Exception.h"
-#include "../account/CurrentAccount.h"
-#include "../account/SavingsAccount.h"
+#include "exception/Exception.h"
+#include "account/CurrentAccount.h"
+#include "account/SavingsAccount.h"
 
 Customer::Customer(const std::string &firstName,
                    const std::string &lastName,

@@ -1,5 +1,6 @@
 #ifndef OVERDRAFT_H
 #define OVERDRAFT_H
+
 #include <ctime>
 
 class CurrentAccount;
@@ -15,7 +16,7 @@ class Overdraft
     double interestDebt;
     int overdraftDuration;
     int maxOverdraftDuration;
-    // грейспериод;
+
     void updateOverdraftDuration();
 
 public:
@@ -29,5 +30,3 @@ public:
 };
 
 #endif
-
-// забыл спросить про заморозку при длительном отрицательном балансе

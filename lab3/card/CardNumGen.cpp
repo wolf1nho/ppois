@@ -10,8 +10,7 @@ int CardNumGen::randInt(int min, int max)
     return dist(rng);
 }
 
-// Алгоритм Луна (получение контрольной цифры)
-int CardNumGen::luhnCheckDigit(const std::string &numberWithoutCheck)
+int CardNumGen::luhnCheckDigit(const std::string &numberWithoutCheck) // Алгоритм Луна
 {
     int sum = 0;
     bool doubleDigit = true;

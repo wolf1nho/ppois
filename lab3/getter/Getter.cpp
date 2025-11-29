@@ -1,5 +1,5 @@
 #include "Getter.h"
-#include "../exception/Exception.h"
+#include "exception/Exception.h"
 
 std::string Getter::getCurrency(Currency cur)
 {

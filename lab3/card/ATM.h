@@ -4,12 +4,10 @@
 #include <vector>
 
 #include "Card.h"
-// #include "../account/AccountTransaction.h"
 #include "../money/Money.h"
 #include "ATMStorage.h"
 #include "../account/Credit.h"
 
-// class Card;
 class Transaction;
 class Credit;
 class AccountTransaction;
@@ -30,7 +28,6 @@ class ATM
     Card *card;
     int failedPinInput;
     bool authenticated;
-    // AccountTransaction *transaction;
     ATMStorage storage;
     DataManager *dataManager;
 

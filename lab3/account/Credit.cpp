@@ -1,6 +1,6 @@
 #include "Credit.h"
-#include "../getter/TimeGetter.h"
-#include "../exception/Exception.h"
+#include "getter/TimeGetter.h"
+#include "exception/Exception.h"
 
 Credit::Credit(double creditSum, Currency currency, double interestRate, Customer *owner,
                int monthCount, bool earlyRepayment, const std::string &creditAndAccountName, DataManager *dataManager)
@@ -34,10 +34,6 @@ Credit::Credit(double creditSum, Currency currency, double interestRate, Custome
     dataManager->addCredit(this);
 }
 
-/* Credit::~Credit()
-{
-    delete account;
-} */
 
 std::string Credit::getID() const
 {

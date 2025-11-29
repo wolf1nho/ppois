@@ -8,12 +8,6 @@
 #include "AccountTransaction.h"
 #include "CreditPayment.h"
 
-// enum class Currency;
-// enum class TransactionStatus;
-// enum class TransactionType;
-// class AccountTransaction;
-// class CreditPayment;
-
 class Receipt
 {
     std::string id;

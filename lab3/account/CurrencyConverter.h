@@ -6,8 +6,6 @@
 
 #include "Currency.h"
 
-//class CurrencyRateTableau;
-
 class CurrencyConverter
 {
     friend class CurrencyRateTableau;

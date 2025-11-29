@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <string>
 
-#include "../card/InternetBankingAccount.h"
+#include "card/InternetBanking.h"
 
 TEST(InternerBankingTest, test1)
 {

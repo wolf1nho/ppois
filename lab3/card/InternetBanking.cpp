@@ -1,4 +1,4 @@
-#include "InternetBankingAccount.h"
+#include "InternetBanking.h"
 #include <algorithm>
 #include "../exception/Exception.h"
 #include "../account/AccountTransaction.h"

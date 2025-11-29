@@ -5,7 +5,7 @@
 #include <vector>
 
 #include "Money.h"
-#include "../account/Currency.h"
+#include "account/Currency.h"
 
 class Wallet
 {

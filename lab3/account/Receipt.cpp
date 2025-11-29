@@ -1,6 +1,6 @@
 #include "Receipt.h"
-#include "../getter/Getter.h"
-#include "../getter/TimeGetter.h"
+#include "getter/Getter.h"
+#include "getter/TimeGetter.h"
 
 Receipt::Receipt(AccountTransaction &trans)
     : id(trans.id), fromID(trans.from->getID()),

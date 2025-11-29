@@ -5,10 +5,8 @@
 #include <ctime>
 #include <string>
 
-// #include "CreditAccount.h"
-// #include "../customer/Customer.h"
 #include "CreditPayment.h"
-#include "../datamanager/DataManager.h"
+#include "datamanager/DataManager.h"
 #include "Currency.h"
 
 class CreditAccount;

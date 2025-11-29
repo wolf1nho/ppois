@@ -1,5 +1,5 @@
 #include "CreditPayment.h"
-#include "../exception/Exception.h"
+#include "exception/Exception.h"
 
 CreditPayment::CreditPayment(Credit *credit, DataManager *dataManager)
     : credit(credit), Transaction(nullptr, 0, credit->currency, TransactionType::PAYMENT, dataManager)

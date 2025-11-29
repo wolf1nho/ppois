@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <string>
 
-#include "../card/InternetBankingAccount.h"
-#include "../card/Cashback.h"
+#include "card/InternetBanking.h"
+#include "card/Cashback.h"
 
 TEST(CashbackTest, test1)
 {

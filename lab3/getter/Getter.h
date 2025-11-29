@@ -3,8 +3,8 @@
 
 #include <string>
 
-#include "../account/Currency.h"
-#include "../account/Transaction.h"
+#include "account/Currency.h"
+#include "account/Transaction.h"
 
 class Getter
 {

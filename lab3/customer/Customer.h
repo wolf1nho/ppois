@@ -4,10 +4,10 @@
 #include <string>
 #include <vector>
 
-#include "../account/BankAccount.h"
-#include "../card/Card.h"
-#include "../datamanager/DataManager.h"
-#include "../money/Wallet.h"
+#include "account/BankAccount.h"
+#include "card/Card.h"
+#include "datamanager/DataManager.h"
+#include "money/Wallet.h"
 
 class BankAccount;
 class Card;

@@ -12,7 +12,6 @@ enum class Currency;
 class CurrentAccount : public BankAccount
 {
     friend class Overdraft;
-    // комиссия за снятие наличных
     bool hasOverdraft;
     Overdraft *overdraft;
 

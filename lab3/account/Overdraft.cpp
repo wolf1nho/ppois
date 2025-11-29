@@ -1,7 +1,7 @@
 #include "Overdraft.h"
-#include "../exception/Exception.h"
+#include "exception/Exception.h"
 #include "CurrentAccount.h"
-#include "../getter/TimeGetter.h"
+#include "getter/TimeGetter.h"
 
 Overdraft::Overdraft(CurrentAccount *account, double overdraftLimit, double interestRate, int maxOverdraftDuration)
     : account(account), overdraftLimit(overdraftLimit), interestRate(interestRate), maxOverdraftDuration(maxOverdraftDuration),
