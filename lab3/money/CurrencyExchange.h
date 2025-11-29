@@ -3,7 +3,7 @@
 
 #include <ctime>
 
-#include "Currency.h"
+#include "account/Currency.h"
 
 class CurrencyExchange
 {
@@ -16,7 +16,7 @@ public:
     CurrencyExchange(Currency from, Currency to, double amount);
     Currency getFromCurrency() const { return from; }
     Currency getToCurrency() const { return to; }
-    double getAmount() const { return amount; }
+    double getAmount() const { return amount; } 
 };
 
 #endif
