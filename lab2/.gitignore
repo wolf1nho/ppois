@@ -4,5 +4,4 @@ build_coverage
 counter.txt
 exception.txt
 ideas.txt
-run_coverage.sh
 .vscode
