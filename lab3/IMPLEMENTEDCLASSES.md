@@ -3,11 +3,11 @@
 ClassName attribure_count methods_count:
 assotiations
 
-1. Account Limit 2 3 ->
+1. Account Limit 2 3 
 
 2. AccountTransaction 1 1 -> Transaction, BankAccount
 
-3. AccountType 3 ->
+3. AccountType 3 
 
 4. BankAccount 8 10 -> Currency, AccountType, Customer, DataManager
 
@@ -19,7 +19,7 @@ assotiations
 
 8. CurrencyConverter 2 2 -> Currency
 
-9. CurrencyExchange 4 -> Currency
+9. CurrencyExchange 4 3 -> Currency
 
 10. CurrencyConverter 2 1
 
@@ -57,7 +57,7 @@ assotiations
 
 27. Cashback 4 4 -> Card
 
-28. ExpirationDate 3 3 0
+28. ExpirationDate 3 3
 
 29. InternetBanking 6 12 -> Card, DataManager
 
@@ -103,7 +103,11 @@ assotiations
 
 50. Wallet 1 2 -> Currency, Nominal
 
-193 метода
+199 поля
+
+207 метода
+
+67 ассоциаций
 
 18 исключений
 
